@@ -1,0 +1,107 @@
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+  <h1 class="h3 mb-0">Add user</h1>
+</div>
+
+<!-- Content Row -->
+<div class="row">
+  <div class="col-md-12">
+    <div class="card mb-4 border-0 shadow">
+      <div class="card-header border-0 bg-gradient-primary text-white">Add user</div>
+      <div class="card-body">
+        <form
+          method="post"
+          action="/addUser"
+          enctype="application/x-www-form-urlencoded"
+        >
+
+          <div class="form-row">
+            <div class="form-group col-md-6 col-sm-12">
+              <label class="small mb-1" for="inputname">Full name</label>
+              <input
+                class="form-control"
+                id="inputname"
+                type="text"
+                placeholder="Enter full name"
+                name="name"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6 col-sm-12">
+              <label class="small mb-1" for="inputemail">Email address</label>
+              <input
+                class="form-control"
+                id="inputemail"
+                type="email"
+                placeholder="Enter email address"
+                name="email"
+              />
+            </div>
+          </div>
+
+          <!-- Form Group (email address)-->
+          <div class="form-row">
+            <div class="form-group col-md-6 col-sm-12">
+              <label class="small mb-1" for="user-role">User role </label>
+              <select class="form-control" name="role" id="user-role">
+                <option value="">-- Select user role --</option>
+                <option value="0">Admin</option>
+                <option value="3">Junior Admin</option>
+                <option value="1">Vendor</option>
+                <option value="2">Regular User</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Form Group (email address)-->
+          <div class="form-row">
+            <div class="form-group col-md-6 col-sm-12">
+              <label class="small mb-1" for="inputPhone">Phone number</label>
+              <input
+                class="form-control"
+                id="inputPhone"
+                name="phone"
+                type="tel"
+                placeholder="Enter your phone number"
+                data-inputmask="'mask': '9999 9999 9999 9999'"
+              />
+            </div>
+          </div>
+
+          <!-- Form Row-->
+          <div class="form-row">
+            <div class="form-group col-md-6 col-sm-12">
+              <label class="small mb-1" for="inputPassword">Password</label>
+              <input
+                class="form-control"
+                id="inputPassword"
+                type="password"
+                placeholder="Enter password"
+                name="password"
+              />
+            </div>
+          </div>
+
+          <!-- Form Row-->
+          <div class="form-row">
+            <div class="form-group col-md-6 col-sm-12">
+              <label class="small mb-1" for="inputConfirmpass">Confirm Password</label>
+              <input
+                class="form-control"
+                id="inputConfirmpass"
+                type="password"
+                name="confirm_password"
+                placeholder="Confirm password"
+              />
+            </div>
+          </div>
+
+          <!-- Save changes button-->
+          <button class="btn btn-primary" type="submit">Add</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
